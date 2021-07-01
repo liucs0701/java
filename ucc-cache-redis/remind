@@ -1,0 +1,24 @@
+此工程是java连接redis的工程文件，可以编译成jar包之后直接添加到工程中，然后再配置文件中配置一下内容：
+
+<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:conf/jdbc.properties</value>
+                <value>file:C:/Users/liucs/IdeaProjects/saas/apps/cloudsoft/ImCC2.0/ucc/redis.properties</value>
+            </list>
+        </property>		
+	</bean>
+
+<!-- redis缓存 -->
+    <bean id="jedisService" class="com.szhtp.cache.jedis.JedisHelper"
+          init-method="initialPool" scope="singleton">
+        <property name="servers" value="${redis.servers}"/>
+        <property name="port" value="${redis.port}"/>
+        <property name="prefix" value="${redis.prefix}"/>
+        <property name="password" value="${redis.pass}"/>
+        <property name="maxActive" value="${redis.maxActive}"/>
+        <property name="mode" value="${redis.mode}"/>
+        <property name="masterName" value="${redis.masterName}"/>
+    </bean>
+    
+无须再次在工程中编写redis相关操作的代码。
