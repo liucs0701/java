@@ -1,8 +1,0 @@
-com\orangefunction\tomcat\redissessions\SessionSerializationMetadata.class
-com\orangefunction\tomcat\redissessions\Serializer.class
-com\orangefunction\tomcat\redissessions\DeserializedSessionContainer.class
-com\orangefunction\tomcat\redissessions\RedisSessionHandlerValve.class
-com\orangefunction\tomcat\redissessions\RedisSessionManager$SessionPersistPolicy.class
-com\orangefunction\tomcat\redissessions\JavaSerializer.class
-com\orangefunction\tomcat\redissessions\RedisSessionManager.class
-com\orangefunction\tomcat\redissessions\RedisSession.class
