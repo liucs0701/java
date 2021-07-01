@@ -9,7 +9,7 @@
     <version>1.0.0</version>
 
     <properties>
-        <junit.version>4.10</junit.version>
+        <junit.version>4.13.1</junit.version>
         <redis.version>2.9.0</redis.version>
     </properties>
 
